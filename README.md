@@ -51,7 +51,7 @@ source [你的路径]/ACADOtoolkit/build/acado_env.sh
 source ~/.bashrc
 ```
 
-* 构建求解器，在./nmpc_solver_setup.cpp上构建你的求解器
+* 构建求解器，在**nmpc_solver_setup.cpp**上构建你的求解器
 
 * 生成求解器
 ```sh
