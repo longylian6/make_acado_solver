@@ -15,11 +15,7 @@ Prerequests:
 
 ACADO toolkit needs to be properly installed. Follow the instructions here: http://acado.github.io/install_linux.html
 
-* In your **~/.bashrc** add the line:
-`
-source [pathToAcado]/ACADOtoolkit/build/acado_env.sh
-`
-Remember to *source* ~/.bashrc,
+* In your **~/.bashrc** add the line:`source [pathToAcado]/ACADOtoolkit/build/acado_env.sh`. Remember to *source* ~/.bashrc,
 ```sh
 source ~/.bashrc
 ```
