@@ -30,7 +30,7 @@ make
 ```
 * The executable is now placed in the folder ../solver. Execute it by running the following commands:
 ```sh
-cd ../../solver
+cd ../solver
 ./nmpc_solver_setup
 ```
 Then the controller is generated on *OCPexport* folder.
