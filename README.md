@@ -8,17 +8,22 @@ Description:
 
 This folder contains code to Automatically generate an MPC controller using ACADO toolkit.
 
-The file *nmpc_solver_setup.cpp* is what defines the MPC controller and it is this you should change in order the change the controller. Then build/install it using the explanation below. As an example it easy to change the prediction horizon if that is prefered.
+The file **nmpc_solver_setup.cpp** is what defines the MPC controller and it is this you should change in order the change the controller. Then build/install it using the explanation below. As an example it easy to change the prediction horizon if that is prefered.
 
 Prerequests: 
 ------
 
 ACADO toolkit needs to be properly installed. Follow the instructions here: http://acado.github.io/install_linux.html
 
-* In your ~/.bashrc add the line:
-```sh
+* In your **~/.bashrc** add the line:
+`
 source [pathToAcado]/ACADOtoolkit/build/acado_env.sh
+`
+Remember to *source* ~/.bashrc,
+```sh
+source ~/.bashrc
 ```
+
 
 * Build/Install. From this folder do:
 ```sh
@@ -33,7 +38,7 @@ make
 cd ../solver
 ./nmpc_solver_setup
 ```
-Then the controller is generated on *OCPexport* folder.
+Then the controller is generated on **OCPexport** folder.
 
 
 
@@ -41,9 +46,13 @@ Then the controller is generated on *OCPexport* folder.
 # 中文简单讲解
 * 下载安装acado
 
-* 增加环境变量，在 *~/.bashrc* 增加一句
+* 增加环境变量，在 **~/.bashrc** 增加一句
+`
+source [你的路径]/ACADOtoolkit/build/acado_env.sh
+`
+加完这一句后，记得要 *source* 一下
 ```sh
-export [你的路径]/ACADOtoolkit/build/acado_env.sh
+source ~/.bashrc
 ```
 
 * 构建求解器，在./nmpc_solver_setup.cpp上构建你的求解器
@@ -58,7 +67,7 @@ make
 cd ../solver
 ./nmpc_solver_setup
 ```
-然后会在*OCPexport*文件里生成你的解析器了
+然后会在**OCPexport**文件里生成你的解析器了
 
 * 在Clion上使用求解器，使用解析器的代码在./test_on_clion/main.cpp
 
