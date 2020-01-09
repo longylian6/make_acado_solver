@@ -40,7 +40,7 @@ Then the controller is generated on **OCPexport** folder.
 
 
 # 中文简单讲解
-* 下载安装acado
+* 下载安装acado, https://github.com/ethz-asl/mav_control_rw.git.
 
 * 增加环境变量，在 **~/.bashrc** 增加一句
 `
