@@ -8,7 +8,7 @@ Description:
 
 This folder contains code to Automatically generate an MPC controller using ACADO toolkit.
 
-The file **nmpc_solver_setup.cpp** is what defines the MPC controller and it is this you should change in order the change the controller. Then build/install it using the explanation below. As an example it easy to change the prediction horizon if that is prefered.
+The file **nmpc_solver_setup.cpp** is what defines the MPC controller and it is this you should change in order to change the controller. Then build/install it using the explanation below. As an example it easy to change the prediction horizon if that is prefered.
 
 Prerequests: 
 ------
@@ -29,12 +29,28 @@ cd build
 cmake ..
 make
 ```
-* The executable is now placed in the folder ../solver. Execute it by running the following commands:
+
+* The executable file is now placed in the folder ../solver. Execute it by running the following commands:
 ```sh
 cd ../solver
 ./nmpc_solver_setup
 ```
-Then the controller is generated on **OCPexport** folder.
+
+Then the controller is generated on **solver/OCPexport** folder.
+* Copy your controller to your project, i.e.
+```sh
+cp -r ./OCPexport/ ../test/solver/
+```
+
+* There is an example of how to use the generated controller on test folder. 
+```sh
+cd ../test
+mkdir build
+cd build
+cmake ..
+make
+./main
+```
 
 
 
@@ -63,8 +79,23 @@ make
 cd ../solver
 ./nmpc_solver_setup
 ```
-然后会在**OCPexport**文件里生成你的解析器了
+然后会在**solver/OCPexport**文件里生成你的解析器了
 
-* 在Clion上使用求解器，使用求解器的代码在./test_on_clion/main.cpp
+* 将生成的控制器拷贝到测试文件夹test中
+```sh
+cp -r ./OCPexport/ ../test/solver/
+```
 
-* 每次改动求解器后，要记得删除./test_on_clion/solver/OCPexport，将新的./solver/OCPexport文件夹替换原来的文件夹
+* 编译运行例程
+```sh
+cd ../test
+mkdir build
+cd build
+cmake ..
+make
+./main
+```
+每次改动求解器后，要记得删除./test/solver/OCPexport，将新的./solver/OCPexport文件夹替换原来的文件夹
+
+
+

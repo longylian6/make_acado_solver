@@ -1,8 +1,13 @@
+cmake-build-debug/
+.vscode/
+.idea/
+build
+
+solver/nmpc_solver_setup
+test/solver/OCPexport/*
 
 
-./*/cmake-build-debug/
-
-./*/.vscode/
-./*/.idea/
-
-./*/build
+*/cmake-build-debug/
+*/.vscode/
+*/.idea/
+*/build

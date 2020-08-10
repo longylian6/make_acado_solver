@@ -1,4 +1,0 @@
-/home/longylian/ACADOtoolkit/make_solver/make_acado_solver/test_on_clion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/longylian/ACADOtoolkit/make_solver/make_acado_solver/test_on_clion/cmake-build-debug/CMakeFiles/nmpc_lib.dir
-/home/longylian/ACADOtoolkit/make_solver/make_acado_solver/test_on_clion/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/longylian/ACADOtoolkit/make_solver/make_acado_solver/test_on_clion/cmake-build-debug/CMakeFiles/main.dir
