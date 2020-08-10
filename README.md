@@ -6,7 +6,7 @@ Author: Oskar Ljungqvist
 Date: 2017-11-23
 Description:
 
-This folder contains code to Automatically generate an MPC controller using ACADO toolkit.
+This folder contains code to automatically generate an MPC controller using ACADO toolkit.
 
 The file **nmpc_solver_setup.cpp** is what defines the MPC controller and it is this you should change in order to change the controller. Then build/install it using the explanation below. As an example it easy to change the prediction horizon if that is prefered.
 
