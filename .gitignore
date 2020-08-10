@@ -4,6 +4,7 @@ cmake-build-debug/
 build
 
 solver/nmpc_solver_setup
+solver/OCPexport/*
 test/solver/OCPexport/*
 
 
